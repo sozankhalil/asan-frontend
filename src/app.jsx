@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"
 import ShoppingPage1 from "./pages/ShoppingPage1"
@@ -6,7 +7,7 @@ import Contact from "./pages/Contact"
 import Login from "./pages/Login"
 import ShoppingCart from "./pages/ShoppingCart"
 import Signup from './pages/Signup';
-import NavBar from './component/NavBar';
+import Navbar from './components/Navbar';
 
 
 
@@ -14,8 +15,7 @@ import NavBar from './component/NavBar';
 export function App() {
   return (
     <>
-      <h1 className='text-red-500'>sozan</h1>
-      <NavBar/>
+      <Navbar/>
    <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />

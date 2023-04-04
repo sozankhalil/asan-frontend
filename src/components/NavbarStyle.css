@@ -1,0 +1,78 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem ;
+}
+.logo img {
+    width: 7rem;
+    height: 3.5rem;
+   margin-right: 2rem;
+  
+}
+.search-bar{
+    width:25rem ;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgb(53, 53, 53);
+
+}
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding:1rem 1rem ;
+    font-size: 1rem;
+    color:#cac7ff ;
+}
+/* .searchborder {
+    /* width: 25rem;
+    height: 2.5rem;
+border: 1px solid rgb(54, 53, 53);
+padding: 0.5rem 2rem;} */
+
+
+.navRight{
+    display: flex;
+}
+.list{
+margin-right: 3rem;
+}
+.list ul li{
+    display: flex;
+    margin-inline: 0.7rem;
+    color: black;
+    font-weight: 400;
+    
+}
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 2.5rem;
+    border: 1px solid rgb(52, 52, 52);
+    text-align: center;
+    border-radius: 1px;
+    margin-right: 1rem;
+
+   
+
+}
+.signup{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 2.5rem;
+    border: 1px solid rgb(52, 52, 52);
+    text-align: center;
+    border-radius: 1px;
+}
+.shopping-icon{
+    margin-left: 0.5rem;
+}
