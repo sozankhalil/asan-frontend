@@ -5,7 +5,7 @@
     background-color: rgb(217, 217, 223);
     padding: 1rem 2rem;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
 }
 
 .nav,
@@ -93,6 +93,11 @@ padding: 1rem 1rem 1rem 3rem;
         flex-direction: column;
         row-gap: 2rem;
         width: 50%;
+        left: -100%;
+        
+    }
+    .nav.active{
+        left: 0;
     }
 
     .nav-links {
@@ -123,9 +128,13 @@ padding: 1rem 1rem 1rem 3rem;
         .humbergur1{
             display: initial;
             position: fixed;
-           left: 46%;
+           right: 4%;
            top: 2%;
            z-index: 2;
         }
+                .search-box input{
+                width: 20rem;
+                padding-left: 2rem;
+                }
 
 }

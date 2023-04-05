@@ -10,14 +10,15 @@ const Navbar2 = () => {
   const [className, setClassName] = useState(false);
   const handleClass = () => setClassName(!className);
   const [click, setClick] = useState(false);
+  const [activeItem, setActiveItem] = useState('');
   const handleClick = () => setClick(!click);
 
   return (
     <div>
       <div className='humbergur1' onClick={handleClick}>
-        {click ? <AiOutlineClose size={20} style={{ color: 'black' }} /> : <AiOutlineMenu size={20} style={{ color: 'black' }} />}
+        {click ? <AiOutlineClose size={30} style={{ color: 'black' }} /> : <AiOutlineMenu size={30} style={{ color: 'black' }} />}
       </div>
-      <nav className='nav '>
+      <nav className={click?'nav active':'nav'}>
         <Link><img src={logo} alt="" className='logo1 h-12' /></Link>
      
         <div className='search-box-search'>
