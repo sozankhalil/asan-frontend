@@ -1,20 +1,21 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import './NavbarStyle.css'
-import { FaSearch, FaTwitter } from 'react-icons/fa'
+import { FaBars, FaSearch, FaTimes, FaTwitter } from 'react-icons/fa'
 import { HiOutlineShoppingBag } from 'react-icons/Hi'
+
 
 import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
     return (
-        <div className='navbar '>
+        <div className='navbar'>
             <div className='navLeft flex '>
                 <div className='logo '>
-                    <Link> <img src={logo} alt="logo" /></Link>
+                    <Link path='/'> <img src={logo} alt="logo" /></Link>
                 </div>
-                <div className='searchborder rounded-full flex justify-between '>
+                <div className='searchborder'>
                     <form action="" className='search-bar'>
                         <input type="text" placeholder='Search here' className='' />
                         <button>  <FaSearch size={20} style={{ color: '#E12424' }} /></button>
@@ -28,7 +29,7 @@ const Navbar = () => {
                     <ul className='flex '>
                         <li>Foods</li>
                         <li>Handmade</li>
-                        <li>Homes ervices</li>
+                        <li>Services</li>
                         <li>StratUp</li>
                         <li>More</li>
                     </ul>
@@ -37,6 +38,10 @@ const Navbar = () => {
                 <div className='signup'><Link>Sign Up</Link></div>
                 <div><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} className='shopping-icon' />
                 </div>
+            </div>
+            <div className='humbergur'>
+                <FaBars size={20} style={{ color: "black" }} />
+                <FaTimes size={20} style={{ color: "black" }} />
             </div>
         </div>
     )

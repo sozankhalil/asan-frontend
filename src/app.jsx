@@ -8,6 +8,7 @@ import Login from "./pages/Login"
 import ShoppingCart from "./pages/ShoppingCart"
 import Signup from './pages/Signup';
 import Navbar from './components/Navbar';
+import Navbar2 from './components/Navbar2';
 
 
 
@@ -15,7 +16,7 @@ import Navbar from './components/Navbar';
 export function App() {
   return (
     <>
-      <Navbar/>
+    <Navbar2/>
    <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />

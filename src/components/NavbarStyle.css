@@ -2,11 +2,14 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem ;
+   
+    
+   
 }
 .logo img {
-    width: 7rem;
-    height: 3.5rem;
-   margin-right: 2rem;
+    width: 6rem;
+    height: 3rem;
+   margin-right: 1rem;
   
 }
 .search-bar{
@@ -15,7 +18,7 @@
     display: flex;
     align-items: center;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     background: rgba(255,255,255,0.2);
     border: 1px solid rgb(53, 53, 53);
 
@@ -40,11 +43,11 @@ padding: 0.5rem 2rem;} */
     display: flex;
 }
 .list{
-margin-right: 3rem;
+margin-right: 1rem;
 }
 .list ul li{
     display: flex;
-    margin-inline: 0.7rem;
+    margin-inline: 1rem;
     color: black;
     font-weight: 400;
     
@@ -75,4 +78,19 @@ display: flex;
 }
 .shopping-icon{
     margin-left: 0.5rem;
+}
+.humbergur{
+    display: none;
+}
+
+
+@media screen and (max-width: 1040px) {
+.navbar{
+   flex-direction: column;
+   background-color: red;
+}
+
+    .humbergur {
+            display: initial;
+        }
 }
