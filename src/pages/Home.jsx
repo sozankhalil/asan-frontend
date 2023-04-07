@@ -1,10 +1,14 @@
 import React from 'react'
-import HomeContent from '../components/HomeContent'
+import HomeImg from '../components/HomeImg';
+import Customer from '../components/Customer';
+import CustomerCard from '../components/CustomerCard';
 
 const Home = () => {
   return (
     <div>
-
+     <HomeImg/>
+     <Customer/>
+     
     </div>
   )
 }

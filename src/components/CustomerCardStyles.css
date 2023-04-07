@@ -1,0 +1,9 @@
+.button-page{
+    border: 1px solid rgb(255, 255, 255);
+    width: 7.5rem;
+    height: 2.5rem;
+    padding: 0.3rem 1rem;
+    background-color: #ED3636;
+    color: white;
+
+}

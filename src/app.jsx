@@ -16,7 +16,7 @@ import Navbar2 from './components/Navbar2';
 export function App() {
   return (
     <>
-    <Navbar2/>
+   <Navbar2/>
    <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />

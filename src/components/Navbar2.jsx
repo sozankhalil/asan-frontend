@@ -14,20 +14,20 @@ const Navbar2 = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <div>
+    <div className=''>
       <div className='humbergur1' onClick={handleClick}>
         {click ? <AiOutlineClose size={30} style={{ color: 'black' }} /> : <AiOutlineMenu size={30} style={{ color: 'black' }} />}
       </div>
-      <nav className={click?'nav active':'nav'}>
+      <nav className={click ? 'nav active' : 'nav'}>
         <Link><img src={logo} alt="" className='logo1 h-12' /></Link>
-     
+
         <div className='search-box-search'>
           <div className={className ? 'search-box' : 'hide-search-box'}>
-          <form action="" className='search-form'>
-         
-            <input type="text" placeholder='Search here...' />
-          </form>
-            
+            <form action="" className='search-form'>
+
+              <input type="text" placeholder='Search here...' />
+            </form>
+
           </div>
           <div className='search' onClick={handleClass}> {className ? <FaTimes size={20} style={{ color: '#E12424' }} /> : <FaSearch size={20} style={{ color: '#E12424' }} />}
           </div>
@@ -39,7 +39,7 @@ const Navbar2 = () => {
           <li><Link>StartUp</Link></li>
           <li><Link>More</Link></li>
           <li ><Link className='in' >Sign In</Link></li>
-          <li><Link className='up'>Sign Up</Link></li>
+          <li><Link className='up '>Sign Up</Link></li>
           <li><Link><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} /></Link></li>
         </ul>
       </nav>
