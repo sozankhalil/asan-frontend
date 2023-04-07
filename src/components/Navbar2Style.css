@@ -24,10 +24,16 @@
 
 .nav-links li {}
 
-.in,
-.up {
-    padding: 10px 18px;
-    border: 1px solid rgb(52, 52, 52);
+.in
+ {
+padding: 10px 18px;
+    border: 1px solid rgb(24, 23, 23);
+    text-align: center;
+    border-radius: 3px;
+}
+.up{
+padding: 10px 18px;
+    border: 1px solid rgb(253, 253, 253);
     text-align: center;
     border-radius: 3px;
 }

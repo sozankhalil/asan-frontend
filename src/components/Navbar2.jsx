@@ -19,7 +19,7 @@ const Navbar2 = () => {
         {click ? <AiOutlineClose size={30} style={{ color: 'black' }} /> : <AiOutlineMenu size={30} style={{ color: 'black' }} />}
       </div>
       <nav className={click ? 'nav active' : 'nav'}>
-        <Link><img src={logo} alt="" className='logo1 h-12' /></Link>
+        <Link to='/'><img src={logo} alt="" className='logo1 h-12' /></Link>
 
         <div className='search-box-search'>
           <div className={className ? 'search-box' : 'hide-search-box'}>
@@ -33,13 +33,13 @@ const Navbar2 = () => {
           </div>
         </div>
         <ul className='nav-links'>
-          <li><Link>Foods</Link></li>
-          <li><Link>Handmade</Link></li>
-          <li><Link>Services</Link></li>
-          <li><Link>StartUp</Link></li>
-          <li><Link>More</Link></li>
+          <li><Link to='/'>Foods</Link></li>
+          <li><Link to='/'>Handmade</Link></li>
+          <li><Link to='/'>Services</Link></li>
+          <li><Link to='/'>StartUp</Link></li>
+          <li><Link to='/'>More</Link></li>
           <li ><Link className='in' >Sign In</Link></li>
-          <li><Link className='up '>Sign Up</Link></li>
+          <li><Link className='up bg-red-400 text-white border-white '>Sign Up</Link></li>
           <li><Link><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} /></Link></li>
         </ul>
       </nav>
