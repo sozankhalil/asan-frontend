@@ -43,3 +43,28 @@ border-radius: 2px;
     background-color: white;
     color: black;
 }
+@media screen and (max-width:760px) {
+    .home-content {
+        position: absolute;
+        top: 25%;
+        left: 050%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+    .home-content a {
+        font-size: 1rem;
+    }
+@media screen and (max-width:1040px) {
+.home-content {
+        position: absolute;
+        top: 30%;
+        left: 050%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        .home-content a {
+            font-size: 1rem; 
+        }
+    } 
+     

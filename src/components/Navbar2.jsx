@@ -16,7 +16,7 @@ const Navbar2 = () => {
   return (
     <div className=''>
       <div className='humbergur1' onClick={handleClick}>
-        {click ? <AiOutlineClose size={30} style={{ color: 'black' }} /> : <AiOutlineMenu size={30} style={{ color: 'black' }} />}
+        {click ? <AiOutlineClose size={30} style={{ color: 'red' }} /> : <AiOutlineMenu size={30} style={{ color: 'red' }} />}
       </div>
       <nav className={click ? 'nav active' : 'nav'}>
         <Link to='/'><img src={logo} alt="" className='logo1 h-12' /></Link>
@@ -40,7 +40,7 @@ const Navbar2 = () => {
           <li><Link to='/'>More</Link></li>
           <li ><Link className='in' >Sign In</Link></li>
           <li><Link className='up bg-red-400 text-white border-white '>Sign Up</Link></li>
-          <li><Link><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} /></Link></li>
+          <li><Link to='/shoppingCart'><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} /></Link></li>
         </ul>
       </nav>
     </div>

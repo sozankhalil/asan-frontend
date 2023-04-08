@@ -12,9 +12,9 @@ const HomeImg = () => {
                 <div class="layer">
                 </div>
             </div>
-            <div className='home-content'>
-                <h1 className='text-5xl text-white pb-6 mb-8'>Share Your Business Or Online Store & Grow With Us</h1>
-                <Link>Click Here To Share</Link>
+            <div className='home-content xl:top-3/4'>
+                <h1 className='text-2xl text-white pb-6 mb-8 xl:text-4xl'>Share Your Business Or Online Store & Grow With Us</h1>
+                <Link className='xl:text-2xl'>Click Here To Share</Link>
             </div>
         </div>
     )

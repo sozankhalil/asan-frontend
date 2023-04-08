@@ -13,7 +13,7 @@ const CustomerCard = (props) => {
         <div >
           
                 <div className=''>
-                    <h1 className='title text-lg pb-2 font-medium'>{props.title}</h1>
+                    <h1 className='title text-base pb-2 font-medium '>{props.title}</h1>
                 <div className='border-2 '>
                     <div className='customer-img '>
                         <img src={props.imgSrc} alt="image" className='h-60 w-full object-cover'/>
@@ -35,7 +35,7 @@ const CustomerCard = (props) => {
                                         <h1>{props.phone}</h1>
                                     </div>
                                 </div>
-                            <Link className='button-page text-base text-center text-rose-500' to='/shoppingPage'> Visit Page </Link>
+                            <Link className='button-page text-base text-center text-rose-500 hover:bg-slate-500' to='/shoppingPage'> Visit Page </Link>
                             </div>
                         </div>
                    
