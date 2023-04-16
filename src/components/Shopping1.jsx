@@ -11,16 +11,15 @@ const Shopping1 = () => {
     <h1 className='font-bold text-xl mt-14 text-center'>Our Products</h1>
       <div className=' grid gap-12 grid-cols-1 px-10  pt-10 lg:grid-cols-3 md:grid-cols-2' >
     {
-      Shopping1Data.map((value)=>{
+      Shopping1Data.map((product)=>{
     return(<Shopping1Card
-      key={value.id}
-      product={value.product}
-      imgsrc={value.imgsrc}
-      price={value.price}
-      description={value.description}
+     data={product}
+      
       />)
       })
+      
     }
+        
     </div>
    
     </div>
@@ -28,3 +27,9 @@ const Shopping1 = () => {
 }
 
 export default Shopping1
+
+// key = { value.id }
+// product = { value.product }
+// imgsrc = { value.imgsrc }
+// price = { value.price }
+// description = { value.description }

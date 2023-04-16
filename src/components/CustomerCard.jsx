@@ -8,15 +8,15 @@ import { CustomerData } from './CustomerData'
 
 
 
-const CustomerCard = (props) => {
+const CustomerCard = ({ id, title, imgSrc, address, phone }) => {
     return (
         <div >
           
                 <div className=''>
-                    <h1 className='title text-base pb-2 font-medium '>{props.title}</h1>
+                    <h1 className='title text-base pb-2 font-medium '>{title}</h1>
                 <div className='border-2 '>
                     <div className='customer-img '>
-                        <img src={props.imgSrc} alt="image" className='h-60 w-full object-cover'/>
+                        <img src={imgSrc} alt="image" className='h-60 w-full object-cover'/>
                         </div>
                         <div className='customer-content '>
                             <div className='star-icon flex p-2'>
@@ -29,10 +29,10 @@ const CustomerCard = (props) => {
                                 <div className='address-place'>
                                     <div className='flex justify-between'>
                                         <CiLocationOn size={30} style={{ color: '#E12424' }} />
-                                        <h1 className=''> {props.address}</h1> </div>
+                                        <h1 className=''> {address}</h1> </div>
                                     <div className='flex'>
                                         <AiOutlinePhone size={30} style={{ color: '#E12424' }} />
-                                        <h1>{props.phone}</h1>
+                                        <h1>{phone}</h1>
                                     </div>
                                 </div>
                             <Link className='button-page text-base text-center text-rose-500 hover:bg-slate-500' to='/shoppingPage'> Visit Page </Link>

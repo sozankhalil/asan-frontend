@@ -36,6 +36,7 @@ const Navbar = () => {
                 </div>
                 <div className='signin '><Link>Sign In</Link></div>
                 <div className='signup'><Link>Sign Up</Link></div>
+                
                 <div><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} className='shopping-icon' />
                 </div>
             </div>

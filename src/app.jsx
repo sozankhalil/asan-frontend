@@ -10,6 +10,7 @@ import Signup from './pages/Signup';
 import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
 import Footer from './components/Footer';
+import { ShopContextProvider } from './context/shoppingContext';
 
 
 
@@ -17,7 +18,7 @@ import Footer from './components/Footer';
 export function App() {
   return (
     <>
-  
+      <ShopContextProvider>
       <Navbar2 />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -28,7 +29,7 @@ export function App() {
         <Route path='/shoppingCart' element={<ShoppingCart />} />
       </Routes>
       <Footer />
-     
+      </ShopContextProvider>
     </>
   )
 }

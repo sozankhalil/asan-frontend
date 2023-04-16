@@ -34,7 +34,7 @@ const Navbar2 = () => {
         </div>
         <ul className='nav-links'>
           <li><Link to='/'>Foods</Link></li>
-          <li><Link to='/'>Handmade</Link></li>
+          <li><Link to='/shoppingPage'>Handmade</Link></li>
           <li><Link to='/'>Services</Link></li>
           <li><Link to='/'>StartUp</Link></li>
           <li><Link to='/'>More</Link></li>
