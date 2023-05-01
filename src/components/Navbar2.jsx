@@ -33,13 +33,13 @@ const Navbar2 = () => {
           </div>
         </div>
         <ul className='nav-links'>
-          <li><Link to='/'>Foods</Link></li>
-          <li><Link to='/shoppingPage'>Handmade</Link></li>
-          <li><Link to='/'>Services</Link></li>
-          <li><Link to='/'>StartUp</Link></li>
-          <li><Link to='/'>More</Link></li>
-          <li ><Link className='in' >Sign In</Link></li>
-          <li><Link className='up bg-red-400 text-white border-white '>Sign Up</Link></li>
+          <li className= 'hover:text-red-500 text-lg '><Link to='/'>Foods</Link></li>
+          <li className='hover:text-red-500 text-lg '><Link to='/shoppingPage'>Handmade</Link></li>
+          <li className='hover:text-red-500 text-lg '><Link to='/'>Services</Link></li>
+          <li className='hover:text-red-500 text-lg '><Link to='/'>StartUp</Link></li>
+          <li className='hover:text-red-500 text-lg '><Link to='/'>More</Link></li>
+          <li  ><Link className='in hover:bg-gray-400 hover:text-white hover:border-white' to='/signin' >Sign In</Link></li>
+          <li><Link className='up bg-red-400 text-white border-white hover:bg-gray-400' to='/signup'>Sign Up</Link></li>
           <li><Link to='/shoppingCart'><HiOutlineShoppingBag size={35} style={{ color: '#E12424' }} /></Link></li>
         </ul>
       </nav>

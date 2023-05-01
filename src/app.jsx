@@ -7,7 +7,6 @@ import Contact from "./pages/Contact"
 import Login from "./pages/Login"
 import ShoppingCart from "./pages/ShoppingCart"
 import Signup from './pages/Signup';
-import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
 import Footer from './components/Footer';
 import { ShopContextProvider } from './context/shoppingContext';
@@ -23,7 +22,7 @@ export function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/signin' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/shoppingPage' element={<ShoppingPage1 />} />
         <Route path='/shoppingCart' element={<ShoppingCart />} />
