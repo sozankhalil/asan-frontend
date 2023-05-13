@@ -10,6 +10,7 @@ import Signup from './pages/Signup';
 import Navbar2 from './components/Navbar2';
 import Footer from './components/Footer';
 import { ShopContextProvider } from './context/shoppingContext';
+import ShareBusiness from './pages/ShareBusiness';
 
 
 
@@ -26,6 +27,7 @@ export function App() {
         <Route path='/signup' element={<Signup />} />
         <Route path='/shoppingPage' element={<ShoppingPage1 />} />
         <Route path='/shoppingCart' element={<ShoppingCart />} />
+        <Route path='/shareBusiness' element={<ShareBusiness />} />
       </Routes>
       <Footer />
       </ShopContextProvider>
